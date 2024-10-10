@@ -1,0 +1,20 @@
+  Created by @mintRaven-05
+  Dated: 10th October 2024
+  -------------------------
+
+  This is a file created for thanking the original author
+  of these install scripts. 
+
+  Thank you @prasanthrangani aka Tittu.
+
+  +============================================================+
+  | This link to the original project is below:                |
+  | - https://github.com/prasanthrangan/hyprdots.git           |
+  +============================================================+
+
+  These scripts are part of the original "The Hyde Project"
+  by @prasanthrangan and many other contributors just like him.
+  
+    - A total of 81 contributors worked on this project and once
+    again a THANKS to all those who contributed to the project.
+  +============================================================+
