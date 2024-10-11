@@ -47,6 +47,12 @@ alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long li
 alias ld='eza -lhD --icons=auto' # long list dirs
 alias lt='eza --icons=auto --tree' # list folder as tree
 #==============================================================================================
+# Aliases for package manager (pacman)
+alias install='sudo pacman -S' # install package
+alias update='sudo pacman -Syu' # update system/package
+alias uninstall='sudo pacman -R' # uninstall package
+alias search='sudo pacman -Ss' # search packages
+#==============================================================================================
 # Aliases for AUR helper (yay or paru)
 alias un='$aurhelper -Rns' # uninstall package
 alias up='$aurhelper -Syu' # update system/package/aur
