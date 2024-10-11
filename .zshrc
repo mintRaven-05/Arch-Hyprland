@@ -62,10 +62,10 @@ alias pc='$aurhelper -Sc' # remove unused cache
 alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages
 #==============================================================================================
 # Aliases for Extras
-alias mkdir = 'mkdir -p'
-alias sleep = 'sudo shutdown now'
-alias clear = 'clear && nerdfetch'
-alias reboot = 'sudo shutdown -r now'
+alias mkdir='mkdir -p'
+alias sleep='sudo shutdown now'
+alias clear='clear && nerdfetch'
+alias reboot='sudo shutdown -r now'
 alias geminux='python ~/.Geminux/main.py'
 #==============================================================================================
 # Aliases for navigation
