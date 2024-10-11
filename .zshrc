@@ -1,17 +1,23 @@
+# ~/.zshrc
+# Created by @mintRaven-05
+# Dated: 10th October 2024
+# Modified: 11th October 2024
+#
+#===============================================================================================
 # set ZSH to oh-my-zsh base folder
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="gnzh"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 nerdfetch
-
+#===============================================================================================
 # Detect AUR wrapper
 if pacman -Qi yay &>/dev/null; then
    aurhelper="yay"
 elif pacman -Qi paru &>/dev/null; then
    aurhelper="paru"
 fi
-
+#===============================================================================================
 # Install packages using pacman or AUR helper
 function in {
     local -a inPkg=("$@")
@@ -31,7 +37,7 @@ function in {
         ${aurhelper} -S "${aur[@]}"
     fi
 }
-
+#===============================================================================================
 # Aliases for common commands
 alias c='clear' # clear terminal
 alias l='eza -lh --icons=auto' # long list
@@ -46,21 +52,23 @@ alias pa='$aurhelper -Ss' # list available package
 alias pc='$aurhelper -Sc' # remove unused cache
 alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages
 alias geminux='python ~/.Geminux/main.py'
-
+#==============================================================================================
+# Aliases for navigation
 alias ..='cd ..'
 alias ...='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
-
+#==============================================================================================
 # keybinds for extra tools
 bindkey -s "^e" "yazi\n"
 bindkey -s '^ ' 'geminux^M' # Ctrl + spacebar to activate gemini assistant in terminal
 bindkey -s '^g' 'lazygit^M' # Ctrl + G to activate lazygit while inside a local git repo
-
+#==============================================================================================
 # fzf and Powerlevel10K
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+#==============================================================================================
 
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
   --color=fg:-1,fg+:#ffffff,bg:-1,bg+:#443b68
@@ -70,3 +78,4 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
   --border="bold" --border-label=" mintRaven " --preview-window="border-rounded" --padding="1"
   --prompt="> " --marker="" --pointer="󰁕" --separator="═"
   --scrollbar="█"'
+#===============================================================================================
