@@ -8,7 +8,7 @@
   Thank you @prasanthrangani aka Tittu.
 
   +============================================================+
-  | This link to the original project is below:                |
+  | The link to the original project is below:                |
   | - https://github.com/prasanthrangan/hyprdots.git           |
   +============================================================+
 
