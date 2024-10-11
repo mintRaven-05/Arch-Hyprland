@@ -67,3 +67,12 @@ alias .5='cd ../../../../..'
 # fzf and Powerlevel10K
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+  --color=fg:-1,fg+:#ffffff,bg:-1,bg+:#443b68
+  --color=hl:#6b5fb0,hl+:#ac48fd,info:#5d90ff,marker:#ff0073
+  --color=prompt:#65f48e,spinner:#f56b6b,pointer:#cc41ff,header:#f352a5
+  --color=gutter:#443b68,border:#5d4fa1,label:#f25282,query:#ffb647
+  --border="bold" --border-label=" mintRaven " --preview-window="border-rounded" --padding="1"
+  --prompt="> " --marker="" --pointer="󰁕" --separator="═"
+  --scrollbar="█"'
