@@ -15,6 +15,35 @@ alias geminux='python ~/.Geminux/main.py'
 bindkey -s '^ ' 'geminux^M' # Ctrl + spacebar to activate gemini assistant in terminal
 bindkey -s '^g' 'lazygit^M' # Ctrl + G to activate lazygit while inside a local git repo
 
+# Detect AUR wrapper
+if pacman -Qi yay &>/dev/null; then
+   aurhelper="yay"
+elif pacman -Qi paru &>/dev/null; then
+   aurhelper="paru"
+fi
+
+function in {
+    local -a inPkg=("$@")
+    local -a arch=()
+    local -a aur=()
+
+    for pkg in "${inPkg[@]}"; do
+        if pacman -Si "${pkg}" &>/dev/null; then
+            arch+=("${pkg}")
+        else
+            aur+=("${pkg}")
+        fi
+    done
+
+    if [[ ${#arch[@]} -gt 0 ]]; then
+        sudo pacman -S "${arch[@]}"
+    fi
+
+    if [[ ${#aur[@]} -gt 0 ]]; then
+        ${aurhelper} -S "${aur[@]}"
+    fi
+}
+
 # Aliases for common commands
 alias c='clear' # clear terminal
 alias l='eza -lh --icons=auto' # long list
