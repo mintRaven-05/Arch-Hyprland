@@ -58,7 +58,7 @@ alias pi='$aurhelper -S' # install package
 alias un='$aurhelper -Rns' # uninstall package
 alias up='$aurhelper -Syu' # update system/package/aur
 alias pl='$aurhelper -Qs' # list installed package
-alias ps='$aurhelper -Ss' # list available package
+alias pq='$aurhelper -Ss' # list available package
 alias pc='$aurhelper -Sc' # remove unused cache
 alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages
 #==============================================================================================
