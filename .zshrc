@@ -54,10 +54,11 @@ alias uninstall='sudo pacman -R' # uninstall package
 alias search='sudo pacman -Ss' # search packages
 #==============================================================================================
 # Aliases for AUR helper (yay or paru)
+alias pi='$aurhelper -S' # install package
 alias un='$aurhelper -Rns' # uninstall package
 alias up='$aurhelper -Syu' # update system/package/aur
 alias pl='$aurhelper -Qs' # list installed package
-alias pa='$aurhelper -Ss' # list available package
+alias ps='$aurhelper -Ss' # list available package
 alias pc='$aurhelper -Sc' # remove unused cache
 alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages
 #==============================================================================================
