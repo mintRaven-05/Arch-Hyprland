@@ -38,6 +38,10 @@ function in {
         ${aurhelper} -S "${aur[@]}"
     fi
 }
+
+function fat() {
+  tac "$1" | fzf
+}
 #===============================================================================================
 # Aliases for common commands
 alias c='clear'
@@ -64,6 +68,7 @@ alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages
 #==============================================================================================
 # Aliases for Extras
 alias mkdir='mkdir -p'
+alias cat = 'fat'
 alias sleep='sudo shutdown now'
 alias clear='clear && nerdfetch'
 alias reboot='sudo shutdown -r now'
