@@ -10,7 +10,6 @@ ZSH_THEME="ultima"
 plugins=(git zsh-syntax-highlighting)
 EDITOR='nvim'
 source $ZSH/oh-my-zsh.sh
-source ~/ultima-shell/ultima.zsh-theme
 nerdfetch
 #===============================================================================================
 # Detect AUR wrapper
