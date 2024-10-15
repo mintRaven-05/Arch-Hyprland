@@ -6,10 +6,11 @@
 #===============================================================================================
 # set ZSH to oh-my-zsh base folder
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="gnzh"
+ZSH_THEME="ultima"
 plugins=(git zsh-syntax-highlighting)
 EDITOR='nvim'
 source $ZSH/oh-my-zsh.sh
+source ~/ultima-shell/ultima.zsh-theme
 nerdfetch
 #===============================================================================================
 # Detect AUR wrapper
