@@ -1,7 +1,7 @@
 # ~/.zshrc
 # Created by @mintRaven-05
 # Dated: 10th October 2024
-# Modified: 11th October 2024
+# Modified: 15th October 2024
 #
 #===============================================================================================
 # set ZSH to oh-my-zsh base folder
