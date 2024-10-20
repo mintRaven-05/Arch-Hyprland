@@ -1,4 +1,5 @@
 ﻿
+## Arch linux Hyprland Configurations
 <div align="center"><img width="12%" src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/arch.png"/></div>
 
 >[!CAUTION]
