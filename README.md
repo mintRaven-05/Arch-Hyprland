@@ -1,6 +1,8 @@
 ﻿
 <div align="center"><img width="12%" src="https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/arch.png"/></div>
 
+>[!CAUTION]
+>Only perform the installation step if you want to install hyprland in your machine.
 ## Installation
 >[!IMPORTANT]
 >To install these `dotfiles`, you can either clone my repository or clone the original repository which is much more recommended option.
