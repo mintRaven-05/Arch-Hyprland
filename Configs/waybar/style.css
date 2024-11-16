@@ -1,0 +1,109 @@
+@define-color bg rgba(38, 41, 44, 0.85);
+@define-color white #F8F8F2;
+@define-color red #F92672;
+
+* {
+    all: unset;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: @white;
+}
+
+button {
+    min-width: 30px;
+    min-height: 30px;
+}
+
+tooltip {
+    background-color: @bg;
+    color: @white;
+    padding: 1em;
+}
+
+menu {
+    background-color: @bg;
+    padding: 0.5em;
+}
+
+.modules-left {
+    font-family: "Heavy Data Nerd Font propo";
+    font-size: 1.2em;
+    background-color: @bg;
+    border-radius: 1em;
+}
+
+.modules-center .module {
+    font-family: "BigBlueTerm437 Nerd Font";
+    background-color: @bg;
+    border-radius: 1em;
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.modules-center .module:hover {
+    background-color: @white;
+    color: @bg;
+}
+
+.modules-right {
+    font-family: "BigBlueTerm437 Nerd Font";
+    font-size: 0.9em;
+    background-color: @bg;
+    border-radius: 1em;
+    padding-left: 10px;
+}
+
+.modules-right .module {
+    padding-left: 10px;
+    padding-right: 11px;
+    background-image: linear-gradient(@white);
+    background-size: 1px 60%;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+}
+
+#workspaces button {
+    color: @white;
+    border-radius: 1em;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+}
+
+#workspaces button.empty {
+    color: rgba(248, 248, 242, 0.2);
+}
+
+#workspaces button.active {
+    color: @bg;
+    background-color: @white;
+}
+
+#workspaces button:hover {
+    background-color: @white;
+    color: @bg;
+}
+
+#privacy {
+    padding-right: 8px;
+    background-image: linear-gradient(@white);
+    background-size: 1px 60%;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+}
+
+#cpu:hover,
+#memory:hover,
+#bluetooth:hover,
+#network:hover,
+#wireplumber:hover {
+    background-color: @white;
+    color: @bg;
+}
+
+#clock {
+    background-size: 0px;
+}
