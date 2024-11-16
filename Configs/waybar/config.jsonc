@@ -1,0 +1,154 @@
+{
+    "name": "workspaces",
+    "margin-top": 5,
+    "margin-left": 20,
+    "margin-right": 20,
+    "spacing": 0,
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "privacy",
+        "tray",
+        "wireplumber",
+        "battery",
+        "clock"
+    ],
+    "modules-center": [
+        "mpris"
+    ],
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "persistent-workspaces": {
+            "*": 6
+        }
+    },
+    "mpris": {
+        "interval": 1,
+        "format": "{player_icon}{status_icon}| {dynamic}",
+        "dynamic-order": [
+            "title",
+            "artist",
+            "position",
+            "length"
+        ],
+        "dynamic-len": 90,
+        "dynamic-importance-order": [
+            "title",
+            "position",
+            "length",
+            "artist",
+            "album"
+        ],
+        "player-icons": {
+            "chromium": " | ",
+            "spotify": "󰓇 | ",
+            "spotifyd": "󰓇 | "
+        },
+        "status-icons": {
+            "playing": " ",
+            "paused": " "
+        }
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "privacy": {
+        "icon-size": 16,
+        "modules": [
+            {
+                "type": "screenshare",
+                "tooltip": true,
+                "tooltip-icon-size": 24
+            },
+            {
+                "type": "audio-in",
+                "tooltip": true,
+                "tooltip-icon-size": 24
+            }
+        ]
+    },
+    "cpu": {
+        "format": " {usage}%",
+        "interval": 1,
+        "on-click": "kitty gotop"
+    },
+    "memory": {
+        "format": "  {used:0.1f}G",
+        "tooltip-format": "Usage: {used} GiB / {total} GiB",
+        "interval": 1,
+        "on-click": "kitty gotop"
+    },
+    "bluetooth": {
+        "format": "󰂲",
+        "format-on": "󰂯",
+        "format-off": "󰂲",
+        "format-connected": "󰂱",
+        "on-click": "kitty bluetuith"
+    },
+    "network": {
+        "family": "ipv6",
+        "format-wifi": "{icon}",
+        "format-ethernet": "󰲝 ",
+        "format-disconnected": "󰲜 ",
+        "format-icons": [
+            "󰤯 ",
+            "󰤟 ",
+            "󰤢 ",
+            "󰤥 ",
+            "󰤨 "
+        ],
+        "tooltip-format-wifi": "SSID: {essid}\nInterface: {ifname}\nIP: {ipaddr}\nSignal: {signalStrength}%\nFrequency: {frequency}\nDownload: {bandwidthDownBytes}\nUpload: {bandwidthUpBytes}",
+        "tooltip-format-ethernet": "Interface: {ifname}\nIP: {ipaddr}\nDownload: {bandwidthDownBytes}\nUpload: {bandwidthUpBytes}",
+        "tooltip-format-disconnected": ""
+    },
+    "wireplumber": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰓄  {volume}%",
+        "format-icons": [
+            "󰓃 ",
+            "󰓃 ",
+            "󰓃 "
+        ],
+        "on-click": "kitty pulsemixer"
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%",
+        "rotate": 0,
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": "󰂄 {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+    "clock": {
+        "locale": "en_US.utf-8",
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "mode": "month",
+            "weeks-pos": "left",
+            "format": {
+                "months": "<span color='#F8F8F2'><b>{}</b></span>",
+                "days": "<span color='#F8F8F2'><b>{}</b></span>",
+                "weeks": "<span color='#A6E22E'><b>W{}</b></span>",
+                "weekdays": "<span color='#F4BF75'><b>{}</b></span>",
+                "today": "<span color='#F92672'><b><u>{}</u></b></span>"
+            }
+        }
+    }
+}
+
+
+// positions generated based on config.ctl //
+
+	"modules-left": ["custom/padd","","custom/padd"],
+	"modules-center": ["custom/padd","","custom/padd"],
+	"modules-right": ["custom/padd","","custom/padd"],
+
+
+// sourced from modules based on config.ctl //
+
